@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import RegistrationForm from './components/RegistrationForm';
 import LoginForm from './components/LoginForm';
 import WeatherZones from './components/WeatherZones';
+import Weather from './components/Weather';
 
 
 export default class App extends React.Component {
@@ -11,8 +12,9 @@ export default class App extends React.Component {
       <div>
         <h1>Weather or Knot</h1>
         {/* <RegistrationForm /> */}
-        <LoginForm />
+        {/* <LoginForm /> */}
         {/* <WeatherZones /> */}
+        <Weather />
       </div>
     );
   }

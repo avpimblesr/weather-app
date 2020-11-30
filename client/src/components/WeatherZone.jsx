@@ -1,9 +1,5 @@
 import React from 'react'
 
-/*  Display the user's email address, the number of zones they are allowed to select -
-    as well as the those they have already selected, and allow them to add one more
-    at a time. */
-
 export default function WeatherZone(props) {
   return (
     <div className="container">
