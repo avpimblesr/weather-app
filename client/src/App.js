@@ -9,12 +9,12 @@ import Weather from './components/Weather';
 export default class App extends React.Component {
   render() {
     return (
-      <div>
+      <div className="container">
         <h1>Weather or Knot</h1>
         {/* <RegistrationForm /> */}
-        {/* <LoginForm /> */}
+        <LoginForm />
         {/* <WeatherZones /> */}
-        <Weather />
+        {/* <Weather /> */}
       </div>
     );
   }
