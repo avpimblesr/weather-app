@@ -1,7 +1,6 @@
 import React from 'react';
 import { Button, Container } from 'react-bootstrap';
 import Header from './Header';
-import '../App.css'
 
 const regForm = {
   width: "60vw",

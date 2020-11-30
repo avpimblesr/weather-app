@@ -1,9 +1,10 @@
-import './App.css';
+import AddUser from './components/AddUser';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div>
-      <h1>Weather App</h1>
+      <AddUser />
     </div>
   );
 }
