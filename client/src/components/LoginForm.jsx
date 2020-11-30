@@ -14,7 +14,7 @@ export default function LoginForm() {
 
       <button type="submit">Submit</button>
       </form><br />
-      <p>Not registered?&nbsp; <button>Register</button></p>
+      <p>Not registered?&nbsp; <a href="#">Register</a></p>
     </div>
   )
 }
