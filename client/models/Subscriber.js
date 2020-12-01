@@ -5,7 +5,7 @@ const subscriberSchema = new mongoose.Schema({
   lName: { type: String, required: true },
   email: { type: String, required: true },
   password: { type: String, required: true },
-  zipCodes: []
+  zipCodes: { type: String, required: false }
 })
 
 // use in the SubscriberController

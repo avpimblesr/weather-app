@@ -27,11 +27,12 @@ const show = (req, res, next) => {
     })
 }
 
-constg store = (req, res, next) => {
+const store = (req, res, next) => {
   let subscriber = new Subscriber({
     fName: req.body.fName,
     lName: req.body.lName,
     email: req.body.email,
+    password: req.body.password,
     zipCodes: req.body.zipCodes
   })
   subscriber.save()
@@ -52,10 +53,11 @@ const update = (req, res, next) => {
     fName: req.body.fName,
     lName: req.body.lName,
     email: req.body.email,
+    password: req.body.password,
     zipCodes: req.body.zipCodes
   }
 
-  Subscriber.findByIdAndUpdate(subscriberID, { $set: updatedData })
+  Subscriber.findByIdAndUpdate(subscriberID, { $set: updateData })
     .then(() => {
       res.json({ message: 'Subscriber updated successfully' })
         .catch(error => {
