@@ -8,5 +8,5 @@ const subscriberSchema = new mongoose.Schema({
   zipCodes: []
 })
 
-// used in subscribers.js to create route handler middleware
+// use in the SubscriberController
 module.exports = mongoose.model('Subscriber', subscriberSchema)
